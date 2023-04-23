@@ -3,6 +3,9 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+#R History
+.Rhistory
+
 # C extensions
 *.so
 
@@ -138,4 +141,5 @@ data/springer_data_meta.csv
 data/springer_data_text.csv
 data/posthuman_data.docx
 data/annotated_df.csv
+data/text_cleaned_df.csv
 figures_and_tables/
