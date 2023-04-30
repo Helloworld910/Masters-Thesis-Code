@@ -89,12 +89,6 @@ top_nodes <- which(degs >= cutoff)
 major_hubs <- induced_subgraph(sem_net, top_nodes)
 
 
-#Trimming Major Hubs Graph
-major_hubs_trimmed <- delete_edges(major_hubs, E(major_hubs)[cooc < 100])
-
-vcount(major_hubs_trimmed)
-ecount(major_hubs_trimmed)
-
 #Drawing the Major Hubs
 set.seed(358)
 ggraph(major_hubs, layout="fr") +
